@@ -10,7 +10,7 @@
     }
     main{
     background-color: azure;
-    width: 500px;
+    width: auto;
     margin: auto;
     padding: auto;
     box-shadow: auto rgba(133, 15, 15, 0.219) ;
