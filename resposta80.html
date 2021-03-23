@@ -16,40 +16,41 @@
     <hr width="100%">
 
     <script language="JavaScript">
-		
-        function quadradoValor()
-        { 
-        
-            var valorA, quadrado; 
+
+        function quadradoValor() {
+
+            var valorA, quadrado;
             //entrada de dados		
-            valorA = document.getElementById ("valorA").value;
-            quadrado = parseInt (valorA) * parseInt (valorA);
+            valorA = document.getElementById("valorA").value;
+            quadrado = parseInt(valorA) * parseInt(valorA);
             //alert ("O valor de A elevado ao quadrado e ==>" + valorQ);
             //saida de dados
-            document.getElementById ("txtquadrado").value=quadrado;
+            document.getElementById("txtquadrado").value = quadrado;
         }
-        
-</script>
-</head>
-<body>
-<form>
-<h3>
-    Quadrado:
-    <p>Insira um valor nos campos abaixo:</p>
-    Valor
-    <input id="valorA" type="text" name="txtvalorA"/>
-    <input type="button" id="quadrado" value="Quadrado" onclick="quadradoValor()"/><br><br>
-    <br>
-    Quadrado
-    <input id="txtquadrado" type="text" name="txtquadrado"/>
-    <input type="reset" value="Limpar" name="txtLimpar">
-</h3>	
-</form>
-</body>
+
+    </script>
+    </head>
+
+    <body>
+        <form>
+            <h3>
+                Quadrado:
+                <p>Insira um valor nos campos abaixo:</p>
+                Valor
+                <input id="valorA" type="text" name="txtvalorA" />
+                <input type="button" id="quadrado" value="Quadrado" onclick="quadradoValor()" /><br><br>
+                <br>
+                Quadrado
+                <input id="txtquadrado" type="text" name="txtquadrado" />
+                <input type="reset" value="Limpar" name="txtLimpar">
+            </h3>
+        </form>
+    </body>
+
 </html>
 
 <hr width="100%">
-    
+
 <center><a href="index.html">Voltar ao Inicio</a></center>
 
 <hr width="100%">

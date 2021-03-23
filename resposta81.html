@@ -16,41 +16,42 @@
     <hr width="100%">
 
     <script language="JavaScript">
-			         
-            function restoValor()
-            { 
-            
-                var valor1, resto; 
-                // entrada de dados		
-                valor1 = document.getElementById ("valor1").value;
-                resto = Number (valor1) %6;
-                //alert ("O resto da divisao de um numero por 6 e ==> " + resto);
-                //saida de dados
-                document.getElementById ("txtresto").value=resto;
-            }
 
-</script>
-</head>
-<body>
-<form>
-    <h3>
-        Resto da Divisao:
-        <p>Insira um valor nos dos campos abaixo:</p>
-        Valor
-        <input id="valor1" type="text" name="txtvalor1"/>
-        <input id="resto" type="text" name="txtnumber"/>
-        <input type="button" id="resto" value="Divisao" onclick="restoValor()"/><br><br>
-        Resto da divisao por 6
-        <input id="txtresto" type="text" name="txtresto"/>
-        <input type="reset" value="Limpar" name="txtLimpar">
-    </h3>	
-</form>
+        function restoValor() {
 
-</body>
+            var valor1, resto;
+            // entrada de dados		
+            valor1 = document.getElementById("valor1").value;
+            resto = Number(valor1) % 6;
+            //alert ("O resto da divisao de um numero por 6 e ==> " + resto);
+            //saida de dados
+            document.getElementById("txtresto").value = resto;
+        }
+
+    </script>
+    </head>
+
+    <body>
+        <form>
+            <h3>
+                Resto da Divisao:
+                <p>Insira um valor nos dos campos abaixo:</p>
+                Valor
+                <input id="valor1" type="text" name="txtvalor1" />
+                <input id="resto" type="text" name="txtnumber" />
+                <input type="button" id="resto" value="Divisao" onclick="restoValor()" /><br><br>
+                Resto da divisao por 6
+                <input id="txtresto" type="text" name="txtresto" />
+                <input type="reset" value="Limpar" name="txtLimpar">
+            </h3>
+        </form>
+
+    </body>
+
 </html>
 
-    <hr width="100%">
-    
-    <center><a href="index.html">Voltar ao Inicio</a></center>
-    
-    <hr width="100%">
+<hr width="100%">
+
+<center><a href="index.html">Voltar ao Inicio</a></center>
+
+<hr width="100%">

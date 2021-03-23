@@ -13,43 +13,44 @@
     <h1>
         <center>Resposta - 74</center>
     </h1>
-        <script language="JavaScript">
-				
-            function volumeValor()
-            { 
-            
-                var volume, raio, altura; 
-                //entrada de dados		
-                raio = document.getElementById ("raio").value;
-                altura = document.getElementById ("altura").value;
-                volume = parseFloat (raio * raio) * 3.14159 * parseFloat (altura);
-                //alert ("O Volume de uma lata de óleo é ==> " + volume);
-                //saida de dados
-                document.getElementById ("txtvolume").value=volume;
-            }
-</script>
-</head>
-<body>
-            <form>
-                <h3>
-                    Volume de uma lata:
-                    <p>Insira um valor nos campos abaixo:</p>
-                    Raio:
-                    <input id="raio" type="text" name="txtraio"/><br>
-                    Altura:
-                    <input id="altura" type="text" name="txtaltura"/>
-                    <br>
-                    <br>
-                    <input type="button" id="volume" value="volume" onclick="volumeValor()"/><br><br>
-                    Volume:
-                    <input id="txtvolume" type="text" name="txtvolume"/>
-                </h3>	
-            </form>
-</body>
+    <script language="JavaScript">
+
+        function volumeValor() {
+
+            var volume, raio, altura;
+            //entrada de dados		
+            raio = document.getElementById("raio").value;
+            altura = document.getElementById("altura").value;
+            volume = parseFloat(raio * raio) * 3.14159 * parseFloat(altura);
+            //alert ("O Volume de uma lata de óleo é ==> " + volume);
+            //saida de dados
+            document.getElementById("txtvolume").value = volume;
+        }
+    </script>
+    </head>
+
+    <body>
+        <form>
+            <h3>
+                Volume de uma lata:
+                <p>Insira um valor nos campos abaixo:</p>
+                Raio:
+                <input id="raio" type="text" name="txtraio" /><br>
+                Altura:
+                <input id="altura" type="text" name="txtaltura" />
+                <br>
+                <br>
+                <input type="button" id="volume" value="volume" onclick="volumeValor()" /><br><br>
+                Volume:
+                <input id="txtvolume" type="text" name="txtvolume" />
+            </h3>
+        </form>
+    </body>
+
 </html>
 
-    <hr width="100%">
-    
-    <center><a href="index.html">Voltar ao Inicio</a></center>
-    
-    <hr width="100%">
+<hr width="100%">
+
+<center><a href="index.html">Voltar ao Inicio</a></center>
+
+<hr width="100%">

@@ -11,41 +11,43 @@
 <body>
     <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
     <h1>
-        <center>Resposta - 72</center></h1>
-        
-        <script language="JavaScript">
-					
-            function conversaoGraus()
-            {
-                var c, f;
-                //entrada de dados
-                c = document.getElementById("c").value;
-                f = parseFloat (9 * c + 160) / 5;
-                //alert ("A temperatura convertida em Fahrenheit é ==> " + f);
-                //saida de dados
-                document.getElementById("txtf").value=f;
-            }
-</script>
-</head>
-<body>
-            <form>
-                <h3>
-                    Conversao de uma temperatura:
-                    <p>Insira um valor nos campos abaixo:</p>
-                    Celsius:
-                    <input id="c" type="text" name="txtc"/><br>
-                    <br>
-                    <br>
-                    <input type="button" id="f" value="Fahrenheit" onclick="conversaoGraus()"/><br><br>
-                    Fahrenheit:
-                    <input id="txtf" type="text" name="txtf"/>
-                </h3>	
-            </form>
-</body>
+        <center>Resposta - 72</center>
+    </h1>
+
+    <script language="JavaScript">
+
+        function conversaoGraus() {
+            var c, f;
+            //entrada de dados
+            c = document.getElementById("c").value;
+            f = parseFloat(9 * c + 160) / 5;
+            //alert ("A temperatura convertida em Fahrenheit é ==> " + f);
+            //saida de dados
+            document.getElementById("txtf").value = f;
+        }
+    </script>
+    </head>
+
+    <body>
+        <form>
+            <h3>
+                Conversao de uma temperatura:
+                <p>Insira um valor nos campos abaixo:</p>
+                Celsius:
+                <input id="c" type="text" name="txtc" /><br>
+                <br>
+                <br>
+                <input type="button" id="f" value="Fahrenheit" onclick="conversaoGraus()" /><br><br>
+                Fahrenheit:
+                <input id="txtf" type="text" name="txtf" />
+            </h3>
+        </form>
+    </body>
+
 </html>
 
-    <hr width="100%">
-    
-    <center><a href="index.html">Voltar ao Inicio</a></center>
-    
-    <hr width="100%">
+<hr width="100%">
+
+<center><a href="index.html">Voltar ao Inicio</a></center>
+
+<hr width="100%">

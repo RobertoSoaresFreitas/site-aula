@@ -12,51 +12,50 @@
     <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
     <h1>
         <center>Resposta - 70</center>
-    </h1>    
-        <script language="JavaScript">
-			
-            function validar()
-                { 
-                    var nome, endereco; 
-                    //entrada de dados		
-                    nome = document.getElementById("nome").value;
-                    endereco = document.getElementById("endereco").value;
-                
-                    if (nome == "")
-                    {
-                        alert("O campo nome esta em branco");
-                    }
+    </h1>
+    <script language="JavaScript">
+
+        function validar() {
+            var nome, endereco;
+            //entrada de dados		
+            nome = document.getElementById("nome").value;
+            endereco = document.getElementById("endereco").value;
+
+            if (nome == "") {
+                alert("O campo nome esta em branco");
+            }
 
 
-                    if (endereco == "")
-                    {
-                        alert("O campo endereco esta em branco");
-                    }
-                
-                }
-                
-                
+            if (endereco == "") {
+                alert("O campo endereco esta em branco");
+            }
+
+        }
+
+
     </script>
-</head>
-<body> 
-    <form>
+    </head>
+
+    <body>
+        <form>
             <h3>
                 Cadastrar nome e endereco:
                 <p>Insira seu nome e endereco nos campos abaixo:</p>
                 Nome:
-                <input id="nome" type="text" name="txtnome"/>
+                <input id="nome" type="text" name="txtnome" />
                 <br>
                 Endereco:
-                <input id="endereco" type="text" name="txtendereco"/>
+                <input id="endereco" type="text" name="txtendereco" />
                 <br>
                 <input type="button" value="validar" onclick="validar()">
-            </h3>	
-    </form>
-</body>
+            </h3>
+        </form>
+    </body>
+
 </html>
 
-    <hr width="100%">
-    
-    <center><a href="index.html">Voltar ao Inicio</a></center>
-    
-    <hr width="100%">
+<hr width="100%">
+
+<center><a href="index.html">Voltar ao Inicio</a></center>
+
+<hr width="100%">

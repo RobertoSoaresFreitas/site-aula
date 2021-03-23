@@ -16,63 +16,63 @@
     <hr width="100%">
 
     <script language="JavaScript">
-			
+
         function aviso() {
-       alert("Você alterou o tamanho da janela do seu navegador!");
-       }
-       // Evento responsável por monitorar o evento de redimensionamento
-       window.onresize = aviso;
-       
-       //Evento mensagem caso o usuário não digite nada por um minuto (temporizador)
-       timeId = setInterval("alert('Por favor preencha os campos para contiunar!!!');",60000);
-       function Desativa(){
-           clearInterval(timeId);
-       }
-       
-   function validar() {
-       var nome, idade;
-       //entrada de dados		
-       nome = document.getElementById("nome").value;
-       idade = document.getElementById("idade").value;
+            alert("Você alterou o tamanho da janela do seu navegador!");
+        }
+        // Evento responsável por monitorar o evento de redimensionamento
+        window.onresize = aviso;
 
-       if (nome == "") {
-           alert("O campo nome esta em branco");
-       }
+        //Evento mensagem caso o usuário não digite nada por um minuto (temporizador)
+        timeId = setInterval("alert('Por favor preencha os campos para contiunar!!!');", 60000);
+        function Desativa() {
+            clearInterval(timeId);
+        }
 
-       else if (isNaN(parseInt(idade))) {
-           alert("No campo idade deve ser digitado um numero");
-       }
+        function validar() {
+            var nome, idade;
+            //entrada de dados		
+            nome = document.getElementById("nome").value;
+            idade = document.getElementById("idade").value;
 
-       else if ((idade >= 0) && (idade <= 99)) {
-           alert("Idade valida");
-       }else{
-           alert('Idade invalida');
-       }
-   }
-</script>
-</head>
+            if (nome == "") {
+                alert("O campo nome esta em branco");
+            }
 
-<body>
-<form>
-   <h3>
-       Cadastrar nome e idade:
-       <p>Insira seu nome e idade nos campos abaixo:</p>
-       Nome:
-       <input id="nome" type="text" name="txtnome" />
-       <br>
-       Idade:
-       <input id="idade" type="text" name="txtidade" />
-       <br>
-       <input type="button" value="validar" onclick="validar()">
-       <input type="button" onclick="Desativa()" value="Desativa Alerta">
-   </h3>
-</form>
-</body>
+            else if (isNaN(parseInt(idade))) {
+                alert("No campo idade deve ser digitado um numero");
+            }
+
+            else if ((idade >= 0) && (idade <= 99)) {
+                alert("Idade valida");
+            } else {
+                alert('Idade invalida');
+            }
+        }
+    </script>
+    </head>
+
+    <body>
+        <form>
+            <h3>
+                Cadastrar nome e idade:
+                <p>Insira seu nome e idade nos campos abaixo:</p>
+                Nome:
+                <input id="nome" type="text" name="txtnome" />
+                <br>
+                Idade:
+                <input id="idade" type="text" name="txtidade" />
+                <br>
+                <input type="button" value="validar" onclick="validar()">
+                <input type="button" onclick="Desativa()" value="Desativa Alerta">
+            </h3>
+        </form>
+    </body>
 
 </html>
 
-    <hr width="100%">
-    
-    <center><a href="index.html">Voltar ao Inicio</a></center>
-    
-    <hr width="100%">
+<hr width="100%">
+
+<center><a href="index.html">Voltar ao Inicio</a></center>
+
+<hr width="100%">
