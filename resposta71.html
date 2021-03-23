@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 71</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 71</center>
+    </h1>
+    <script language="JavaScript">
+										
+        function multiplicacaoValores()
+        { 
+        
+            var num1, num2, multiplicacao; 
+            //entrada de dados		
+            num1 = document.getElementById ("num1").value;
+            num2 = document.getElementById ("num2").value;
+            multiplicacao = parseInt (num1) * parseInt (num2);
+            //alert ("O resultado da multiplicacao entre dois numeros e ==> " + multiplicacao);
+            //saida de dados
+            document.getElementById("txtmultiplicacao").value=multiplicacao;
+        }
+</script>
+</head>
+<body>
+<form>
+    <h3>
+        Multiplicacao:
+        <p>Insira um valor nos campos abaixo:</p>
+        Primeiro numero
+        <input id="num1" type="text" name="txtnum1"/>
+        Segundo numero
+        <input id="num2" type="text" name="txtnum2"/>
+        <input type="button" id="multiplicacao" value="Multiplicacao" onclick="multiplicacaoValores()"/><br><br>
+        Resultado
+        <input id="txtmultiplicacao" type="text" name="txtmultiplicacao"/>
+    </h3>	
+</form>
+</body>
+</html>
+
+    <hr width="100%">
+    
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+    
+    <hr width="100%">

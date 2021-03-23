@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 73</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 73</center>
+    </h1>
+    <script language="JavaScript">
+			
+		function conversaoGraus()
+        {
+            var f, c;
+            //entrada de dados
+            f = document.getElementById("f").value;
+            c = parseFloat (f - 32) * (5/9);
+            //alert ("A temperatura convertida em Celsius é ==> " + c);
+            //saida de dados
+            document.getElementById("txtc").value=c;
+        }
+</script>
+</head></head>
+<body>
+        <form>
+            <h3>
+                Conversao de uma temperatura:
+                <p>Insira um valor nos campos abaixo:</p>
+                Fahrenheit:
+                <input id="f" type="text" name="txtf"/><br>
+                <br>
+                <br>
+                <input type="button" id="c" value="Celsius" onclick="conversaoGraus()"/><br><br>
+                Celsius:
+                <input id="txtc" type="text" name="txtc"/>
+            </h3>	
+        </form>
+</body>
+</html>
+
+    <hr width="100%">
+    
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+    
+    <hr width="100%">

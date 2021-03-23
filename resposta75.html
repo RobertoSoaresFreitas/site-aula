@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 75</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 75</center>
+    </h1>  
+     <script language="JavaScript">
+			function diaValor()
+                { 
+                Console.log()
+                    var idade, ano, mes, dia, soma; 
+                    //entrada de dados		
+                    idade = document.getElementById ("idade").value;
+                    ano = document.getElementById ("ano").value;
+                    mes = document.getElementById ("mes").value;
+                    dia = parseInt (ano * 360) + parseInt (mes * 30);
+                    //alert ("A idade de uma pessoa dias e ==>" + dia);
+                    //saida de dados
+                    document.getElementById ("txtdia").value=dia;
+                }
+                
+    </script>
+</head>
+<body>
+                <form>
+                    <h3>
+                        Idade em dias:
+                        <p>Insira um valor nos campos abaixo:</p>
+                        Idade:
+                        <input id="idade" type="text" name="txtidade"/>
+                        Ano:
+                        <input id="ano" type="text" name="txtano"/>
+                        Mes
+                        <input id="mes" type="text" name="txtnumber"/>
+                        <br>
+                        <br>	
+                        <input type="button" id="dia" value="Dia" onclick="diaValor()"/><br><br>
+                        Dia:
+                        <input id="txtdia" type="text" name="txtdia"/>
+                    </h3>	
+                </form>
+</body>
+</html>
+
+    <hr width="100%">
+    
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+    
+    <hr width="100%">

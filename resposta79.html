@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 79</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 79</center>
+    </h1>
+    <hr width="100%">
+
+    <script language="JavaScript">
+		
+				
+        function trocaValor()
+        { 
+        
+            var valor1, valor2, troca1, troca2; 
+                    
+            valor1 = document.getElementById ("valor1").value;
+            valor2 = document.getElementById ("valor2").value;
+            trocal = valor1 == valor2;
+            troca2 = valor2 == valor1;
+            document.getElementById ("txttroca1").value=troca1;
+            document.getElementById ("txttroca2").value=troca2;
+            //alert ("O valor de A e ==>" + valor1 +" e o valor de B e ==>" + valor2);
+        }
+</script>
+</head>
+<body>
+    <form>
+                <h3>
+                    
+                    Troca:
+                    <p>Insira um valor nos dos campos abaixo:</p>
+                    Primeiro valor 
+                    <input id="valor1" type="text" name"txtvalor1"/><br>
+                    Segundo Valor
+                    <input id="valor2" type="text" name"txtvalor2"/><br>
+                    <br>
+                    <button id="troca" onclick="trocaValor()">Troca</button>
+                    <input id="troca1" type="text" name"txttroca1"/>
+                    <input id="troca2" type="text" name"txttroca2"/>
+                            
+                </h3>	
+            </form>
+</body>
+</html>
+
+    <hr width="100%">
+    
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+    
+    <hr width="100%">

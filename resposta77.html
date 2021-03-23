@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 77</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 77</center>
+    </h1>
+    <hr width="100%">
+
+    <script language="JavaScript">
+			
+        //77. Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, 
+        //utilizando a fórmula PRESTAÇÃO <-- VALOR + (VALOR * (TAXA/100) * TEMPO).
+        
+        
+                function calculoDaPrestacao()
+                    { 
+                    
+                        var prestacao=0,valor=0,taxa,tempo=0;
+                        
+                        //entrada
+                        valor = Number(document.getElementById("Valor").value);
+                        tempo = Number(document.getElementById("Tempo").value);
+                        taxa = Number(document.getElementById("Taxa").value);
+                        
+                        //processamento
+                        prestacao = valor + (valor * (taxa/100) * tempo );
+                        
+                        document.getElementById ("txtprestacao").value = prestacao;
+                    }
+                    
+        </script>
+</head>
+<body>
+                    <form>
+                        <h3>
+                            Cálculo de uma prestação em atraso:
+                            <p>Insira um valor nos campos abaixo:</p>
+                            Valor:
+                            <input id="valor" type="text" name="txtvalor"/>
+                            Tempo:
+                            <input id="tempo" type="text" name="txttempo"/>
+                            Taxa:
+                            <input id="taxa" type="text" name="txttaxa"/>
+                            <br>
+                            <br>	
+                            <input type="button" id="prestacao" value="prestacao" onclick="calculoDaPrestacao()"/><br><br>
+                            Prestação:
+                            <input id="txtprestacao" type="text" name="txtprestacao"/>
+                        </h3>	
+                    </form>
+</body>
+</html>
+
+    <hr width="100%">
+    
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+    
+    <hr width="100%">
