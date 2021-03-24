@@ -15,15 +15,52 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10A -->
+        Questionário Nº 10 B -->
 
         <center>Resposta - 99</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Numero 1: <input type="text" id="num1"><br><br>
+        Numero 2: <input type="text" id="num2"><br><br>
+        Numero 3: <input type="text" id="num3"><br><br>
+        Numero 4: <input type="text" id="num4"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var num1, num2, num3, num4, div2, div3;
+        function programa() {
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+            num3 = Number(document.getElementById("num3").value);
+            num4 = Number(document.getElementById("num4").value);
+
+            if (num1 % 2 == 0 && num1 % 3 == 0) {
+                div2 = num1 / 2;
+                div3 = num1 / 3;
+                alert("divisão por 2 do " + num1 + " é " + div2 + " e divisão por 3 do " + num1 + " é " + div3);
+            }
+
+            if (num2 % 2 == 0 && num2 % 3 == 0) {
+                div2 = num2 / 2;
+                div3 = num2 / 3;
+                alert("divisão por 2 do " + num2 + " é " + div2 + " e divisão por 3 do " + num2 + " é " + div3);
+            }
+
+            if (num3 % 2 == 0 && num3 % 3 == 0) {
+                div2 = num3 / 2;
+                div3 = num3 / 3;
+                alert("divisão por 2 do " + num3 + " é " + div2 + " e divisão por 3 do " + num3 + " é " + div3);
+            }
+
+            if (num4 % 2 == 0 && num4 % 3 == 0) {
+                div2 = num4 / 2;
+                div3 = num4 / 3;
+                alert("divisão por 2 do " + num4 + " é " + div2 + " e divisão por 3 do " + num4 + " é " + div3);
+            }
+        }
+    </script>
 
     <hr width="100%">
 

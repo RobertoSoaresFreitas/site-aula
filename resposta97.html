@@ -15,15 +15,32 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 B-->
 
         <center>Resposta - 97</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Informe um valor:<br><input type="text" id="valor1"><br><br>
+        Informe outro Valor:<br><input type="text" id="valor2"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var valor1, valor2;
+        function programa() {
+            valor1 = Number(document.getElementById("valor1").value);
+            valor2 = Number(document.getElementById("valor2").value);
+  
+            if (valor1 > valor2) {
+              diferenca = valor1 - valor2;
+              alert("A diferença é " + diferenca);
+            } else {
+              diferenca = valor2 - valor1;
+              alert("A diferença é " + diferenca);
+            }
+        }
+    </script>
 
     <hr width="100%">
 
