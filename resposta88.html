@@ -15,15 +15,34 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A-->
 
         <center>Resposta - 88</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Numero 1: <input type="text" id="num1"><br><br>
+        Numero 2: <input type="text" id="num2"><br><br>
+        Numero 3: <input type="text" id="num3"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var num1, num2, num3;
+        function programa() {
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+            num3 = Number(document.getElementById("num3").value);
+
+            if (num1 > num2 && num1 > num3) {
+                alert("Maior numero informado é " + num1);
+            } else if (num2 > num1 && num2 > num3) {
+                alert("Maior numero informado é " + num2);
+            } else {
+                alert("Maior numero informado é " + num3);
+            }
+        }
+    </script>
 
     <hr width="100%">
 

@@ -15,15 +15,28 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A -->
 
         <center>Resposta - 90</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Valor <input type="text" id="valor">
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var valor;
+        function programa() {
+            valor = Number(document.getElementById("valor").value);
+
+            if (valor % 2 == 0) {
+                alert(valor + " é um numero PAR")
+            } else {
+                alert(valor + " é um numero IMPAR")
+            }
+        }
+    </script>
 
     <hr width="100%">
 

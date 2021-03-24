@@ -15,15 +15,28 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A-->
 
         <center>Resposta - 91</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Informe um valor de 1 a 9:<br><input type="text" id="valor"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var valor;
+        function programa() {
+            valor = Number(document.getElementById("valor").value);
+
+            if (valor > 0 && valor < 10) {
+                alert("Valor está na faixa permitida");
+            } else {
+                alert("Valor está fora da faixa permitida");
+            }
+        }
+    </script>
 
     <hr width="100%">
 

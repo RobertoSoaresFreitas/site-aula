@@ -11,19 +11,39 @@
 <body>
     <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
     <h1>
-
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A-->
 
         <center>Resposta - 85</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+
+    <form>
+        Nota 1: <input type="text" id="nota1"><br><br>
+        Nota 2: <input type="text" id="nota2"><br><br>
+        Nota 3: <input type="text" id="nota3"><br><br>
+        Nota 4: <input type="text" id="nota4"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var nota1, nota2, nota3, nota4, media;
+        function programa() {
+            nota1 = Number(document.getElementById("nota1").value);
+            nota2 = Number(document.getElementById("nota2").value);
+            nota3 = Number(document.getElementById("nota3").value);
+            nota4 = Number(document.getElementById("nota4").value);
+            media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            if (media >= 7) {
+                alert("Aluno Aprovado - Média do Aluno é " + media);
+            } else {
+                alert("Aluno Reprovado - Média do Aluno é " + media);
+            }
+        }
+    </script>
 
     <hr width="100%">
 

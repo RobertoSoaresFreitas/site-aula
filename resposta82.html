@@ -15,7 +15,7 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A -->
 
         <center>Resposta - 82</center>
     </h1>
@@ -26,41 +26,51 @@
     <head>
         <title> javascript </title>
 
-        Primeiro numero:<input id="numero1" type="number"> <br />
-        Segundo numero:<input id="numero2" type="number"> <br />
-        Terceiro numero:<input id="numero3" type="number"> <br />
-        <button onclick="exibir()">Exibir ordem decrescente</button>
-
-        <script type="text/javascript">
-
-            function exibir() {
-                var num1 = parseFloat(document.getElementById("numero1").value);
-                var num2 = parseFloat(document.getElementById("numero2").value);
-                var num3 = parseFloat(document.getElementById("numero3").value);
-
-                var aux = num1;
-
-                if (num2 > num1) {
-                    aux = num2;
-                    num2 = num1;
-                    num1 = aux;
+        <body>
+            <form>
+                Numero 1: <input type="text" id="num1"><br><br>
+                Numero 2: <input type="text" id="num2"><br><br>
+                Numero 3: <input type="text" id="num3"><br><br>      
+                <button onClick="programa()">Enviar</button>
+            </form>
+            <script language="JavaScript">
+                var num1, num2, num3;
+                function programa() {
+                    num1 = Number(document.getElementById("num1").value);
+                    num2 = Number(document.getElementById("num2").value);
+                    num3 = Number(document.getElementById("num3").value);
+          
+                    if (num2 > num1 && num2 > num3) {
+                      alert(num2 + ", " + num3 + ", " + num1);
+                    } else {
+                      if (num2 >= num1 && num2 >= num3 && num1 >= num3) {
+                      alert(num3 + ", " + num2 + ", " + num1);
+                      } else {
+                          if (num2 > num1 && num2 >= num3 && num1 <= num3) {
+                          alert(num1 + ", " + num3 + ", " + num2);
+                          } else {
+                              if (num2 > num1 && num2 <= num3) {
+                                  alert(num1 + ", " + num2 + ", " + num3);
+                              } else {
+                                  if (num2 < num1 && num1 < num3) {
+                                      alert(num2 + ", " + num1 + ", " + num3);
+                                  } else {
+                                      if (num2 < num3 && num3 <= num1) {
+                                          alert(num2 + ", " + num3 + ", " + num1);
+                                      } else {
+                                          alert(num1 + ", " + num2 + ", " + num3);
+                                      }
+                                      // ABC, ACB, BAC, BCA, CBA, 
+                                      // ABC, ACB, BAC, BCA, CAB, CBA
+                                  }
+                              }
+                          }
+                      }
+                    }
                 }
-
-                if (num3 > num1) {
-                    aux = num3;
-                    num3 = num1;
-                    num1 = aux;
-                }
-
-                if (num3 > num2) {
-                    aux = num3;
-                    num3 = num2;
-                    num2 = aux;
-                }
-                alert(num1 + "-" + num2 + "-" + num3);
-            }
-        </script>
-
+            </script>
+          </body>
+          </html>
 
         <hr width="100%">
 

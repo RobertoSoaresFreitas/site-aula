@@ -15,15 +15,45 @@
         <!-- Nome: Roberto Soares de Freitas
         RA: 155.0781921028
         Data: 23/03/2021
-        Questionário Nº 10 -->
+        Questionário Nº 10 A-->
 
         <center>Resposta - 89</center>
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Numero 1: <input type="text" id="num1"><br><br>
+        Numero 2: <input type="text" id="num2"><br><br>
+        Numero 3: <input type="text" id="num3"><br><br>
+        Numero 4: <input type="text" id="num4"><br><br>
+        Numero 5: <input type="text" id="num5"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var num1, num2, num3, num4, maiorValor, menorValor;
+        function programa() {
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+            num3 = Number(document.getElementById("num3").value);
+            num4 = Number(document.getElementById("num4").value);
+            num5 = Number(document.getElementById("num5").value);
+
+            // Descobrir valor maior
+            valorMaior = num1;
+            if (valorMaior < num2) { valorMaior = num2; }
+            if (valorMaior < num3) { valorMaior = num3; }
+            if (valorMaior < num4) { valorMaior = num4; }
+            if (valorMaior < num5) { valorMaior = num5; }
+            // Descobrir valor menor
+            valorMenor = num1;
+            if (valorMenor > num2) { valorMenor = num2; }
+            if (valorMenor > num3) { valorMenor = num3; }
+            if (valorMenor > num4) { valorMenor = num4; }
+            if (valorMenor > num5) { valorMenor = num5; }
+
+            alert("O valor MAIOR é " + valorMaior + " e o valor MENOR é " + valorMenor);
+        }
+    </script>
 
     <hr width="100%">
 
