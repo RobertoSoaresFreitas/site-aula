@@ -21,8 +21,21 @@
     </h1>
     <hr width="100%">
 
-    <p> aqui</p>
-    
+    Valor <input type="text" id="valor">
+    <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var valor;
+        function programa() {
+            valor = Number(document.getElementById("valor").value);
+
+            if (valor % 2 == 0) {
+                alert(valor + " é um numero PAR")
+            } else {
+                alert(valor + " é um numero IMPAR")
+            }
+        }
+    </script>
 
     <hr width="100%">
 

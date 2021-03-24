@@ -21,8 +21,88 @@
     </h1>
     <hr width="100%">
 
-    <p> aqui</p>
-    
+    <form>
+        <table>
+            <tr>
+                <th>Especificação</th>
+                <th>Codigo</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Cachorro Quente</td>
+                <td>100</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Bauru Simples</td>
+                <td>101</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Bauru com Ovo</td>
+                <td>102</td>
+                <td>R$ 1,50</td>
+            </tr>
+            <tr>
+                <td>Hambúrguer</td>
+                <td>103</td>
+                <td>R$ 1,20</td>
+            </tr>
+            <tr>
+                <td>Cheeseburguer</td>
+                <td>104</td>
+                <td>R$ 1,30</td>
+            </tr>
+            <tr>
+                <td>Refrigerante</td>
+                <td>105</td>
+                <td>R$ 1,00</td>
+            </tr>
+        </table>
+        <br>
+        Escolha por codigo: <input type="text" id="codigo"><br><br>
+        Quantidade: <input type="text" id="quantd"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var codigo, quantd, valor;
+
+
+        function programa() {
+            codigo = Number(document.getElementById("codigo").value);
+            quantd = Number(document.getElementById("quantd").value);
+
+            switch (codigo) {
+                case 100:
+                    valor = valor + (quantd * 1.20);
+                    alert("Cachorro quente acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                case 101:
+                    valor = valor + (quantd * 1.30);
+                    alert("Bauru Simples acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                case 102:
+                    valor = valor + (quantd * 1.50);
+                    alert("Bauru com Ovo acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                case 103:
+                    valor = valor + (quantd * 1.20);
+                    alert("Hambúrguer acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                case 104:
+                    valor = valor + (quantd * 1.30);
+                    alert("Cheeseburguer acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                case 105:
+                    valor = valor + (quantd * 1);
+                    alert("Refrigerante acrescentado - Qtd: " + quantd + " TOTAL: R$" + valor);
+                    break;
+                default:
+                    alert("Codigo Invalido")
+            }
+        }
+
+    </script>
 
     <hr width="100%">
 

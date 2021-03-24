@@ -15,16 +15,37 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <head>
 
-    <hr width="100%">
+        <meta charset="UTF-8">
+        <title>Atividade 60</title>
 
-    <center><a href="index.html">Voltar ao Inicio</a></center>
+    </head>
 
-    <hr width="100%">
+    <body>
+        <form>
+            Informe um numero inteiro: <input type="name" id="valor"><br><br>
+            <button onClick="programa()">Calcular o Quadrado</button>
+        </form>
+        <script language="JavaScript">
+            var valor, quadrado, msg;
 
-</body>
+            function programa() {
+                valor = document.getElementById("valor").value;
+                quadrado = valor ** 2;
+
+                msg = "O quadradro de " + valor + " é " + quadrado;
+                alert(msg)
+            }
+
+        </script>
+
+        <hr width="100%">
+
+        <center><a href="index.html">Voltar ao Inicio</a></center>
+
+        <hr width="100%">
+
+    </body>
 
 </html>

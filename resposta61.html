@@ -15,10 +15,25 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        idade: <input type="name" id="idade"><br><br>
+        mês: <input type="name" id="mes"><br><br>
+        dias: <input type="name" id="dia"><br><br>
+        <button onClick="programa()">Idade em dias</button>
+    </form>
+    <script language="JavaScript">
 
+        function programa() {
+            var idade = document.getElementById("idade").value;
+            var mes = document.getElementById("mes").value;
+            var dia = document.getElementById("dia").value;
+            dia = (dia + (idade * 365) + (mes * 30));
+
+            var msg = "Sua idade em dias é " + dia;
+            alert(msg);
+        }
+
+    </script>
     <hr width="100%">
 
     <center><a href="index.html">Voltar ao Inicio</a></center>

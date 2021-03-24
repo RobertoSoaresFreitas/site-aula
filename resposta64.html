@@ -15,9 +15,21 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Converter <input type="name" id="valor"> °F para °C<br><br>
+        <button onClick="programa()">Calcular Celsius</button>
+    </form>
+    <script language="JavaScript">
+        var C, F, msg;
+
+        function programa() {
+            F = document.getElementById("valor").value;
+            C = (F - 32) * (5 / 9),
+                msg = "Converter " + F + "°F para" + C + " °C";
+            alert(msg)
+        }
+
+    </script>
 
     <hr width="100%">
 

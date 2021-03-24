@@ -21,14 +21,26 @@
     </h1>
     <hr width="100%">
 
-    <p> aqui</p>
-    
+    <<form>
+        Informe um valor inteiro: <input type="text" id="valor"><br><br>
+        <button onClick="programa()">Enviar</button>
+        </form>
+        <script language="JavaScript">
+            var valor;
 
-    <hr width="100%">
+            function programa() {
+                valor = Number(document.getElementById("valor").value);
+                if (!(valor > 3)) {
+                    alert(valor);
+                }
+            }
+        </script>
 
-    <center><a href="index.html">Voltar ao Inicio</a></center>
+        <hr width="100%">
 
-    <hr width="100%">
+        <center><a href="index.html">Voltar ao Inicio</a></center>
+
+        <hr width="100%">
 
 </body>
 

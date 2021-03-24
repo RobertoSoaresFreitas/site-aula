@@ -15,9 +15,26 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Valor: <input type="name" id="valor"><br><br>
+        Taxa: <input type="name" id="taxa"><br><br>
+        Tempo: <input type="name" id="tempo"><br><br>
+        <button onClick="programa()">Calcular Prestação</button>
+    </form>
+    <script language="JavaScript">
+        var valor, taxa, tempo, prestacao;
+
+        function programa() {
+            valor = document.getElementById("valor").value;
+            taxa = document.getElementById("taxa").value;
+            tempo = document.getElementById("tempo").value;
+            prestacao = valor + (valor * (taxa / 100) * tempo);
+
+            msg = "A Prestação é " + prestacao;
+            alert(msg);
+        }
+
+    </script>
 
     <hr width="100%">
 

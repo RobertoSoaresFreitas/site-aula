@@ -15,9 +15,22 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Raio: <input type="name" id="raio"><br><br>
+        <button onClick="programa()">Area de Circuferencia</button>
+    </form>
+    <script language="JavaScript">
+        var raio, area, msg;
+
+        function programa() {
+            raio = document.getElementById("raio").value;
+            area = 3.14 * (raio ** 2);
+
+            msg = "A a área da circunferência é " + area;
+            alert(msg)
+        }
+
+    </script>
 
     <hr width="100%">
 

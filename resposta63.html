@@ -15,9 +15,21 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Converter <input type="name" id="valor"> °C para °F<br><br>
+        <button onClick="programa()">Calcular Fahrenheit</button>
+    </form>
+    <script language="JavaScript">
+        var C, F, msg;
+
+        function programa() {
+            C = document.getElementById("valor").value;
+            F = (9 * C + 160) / 5;
+            msg = "Converter " + C + "°C para" + F + " °F";
+            alert(msg)
+        }
+
+    </script>
 
     <hr width="100%">
 

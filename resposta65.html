@@ -15,9 +15,24 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Altura da Lata: <input type="name" id="altura"><br><br>
+        Raio da Lata: <input type="name" id="raio"><br><br>
+        <button onClick="programa()">Calcular Volume</button>
+    </form>
+    <script language="JavaScript">
+        var altura_lata, raio_lata, volume_lata, msg;
+
+        function programa() {
+            altura_lata = document.getElementById("altura").value;
+            raio_lata = document.getElementById("raio").value;
+            volume_lata = 3.14159 * (raio_lata ** 2) * altura_lata
+
+            msg = "O Volume da lata é " + volume_lata;
+            alert(msg)
+        }
+
+    </script>
 
     <hr width="100%">
 

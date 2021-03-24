@@ -15,9 +15,22 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Informe um numero: <input type="name" id="valor"><br><br>
+        <button onClick="programa()">Calcular Resto</button>
+    </form>
+    <script language="JavaScript">
+        var valor, rest_div, msg;
+
+        function programa() {
+            valor = document.getElementById("valor").value;
+            rest_div = valor % 6;
+
+            msg = "O resto da divisão de  " + valor + " é " + rest_div;
+            alert(msg)
+        }
+
+    </script>
 
     <hr width="100%">
 

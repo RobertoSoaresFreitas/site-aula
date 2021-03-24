@@ -15,9 +15,24 @@
     </h1>
     <hr width="100%">
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quidem distinctio odit fugiat non ducimus.
-        Rem, commodi aspernatur, exercitationem tempore odio hic quas modi doloribus reprehenderit, iste a eum sit.
-    </p>
+    <form>
+        Qual o valor da contação do dolar: <input type="name" id="cotacao"><br><br>
+        converter<input type="name" id="dolar">Dolar para Real<br><br>
+        <button onClick="programa()">Converter</button>
+    </form>
+    <script language="JavaScript">
+        var cotacao, dolar, real, msg;
+
+        function programa() {
+            cotacao = document.getElementById("cotacao").value;
+            dolar = document.getElementById("dolar").value;
+            real = dolar * cotacao
+
+            msg = "$" + dolar + "(dolar) convertido para  R$" + real + "(real)";
+            alert(msg);
+        }
+
+    </script>
 
     <hr width="100%">
 

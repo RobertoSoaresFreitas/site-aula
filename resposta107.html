@@ -21,8 +21,64 @@
     </h1>
     <hr width="100%">
 
-    <p> aqui</p>
-    
+    <form>
+        <table>
+            <tr>
+                <th>Codigo</th>
+                <th>Cargo</th>
+                <th>Percentual</th>
+            </tr>
+            <tr align="center">
+                <td>101</td>
+                <td>Gerente</td>
+                <td>10%</td>
+            </tr>
+            <tr align="center">
+                <td>102</td>
+                <td>Engenheiro</td>
+                <td>20%</td>
+            </tr>
+            <tr align="center">
+                <td>103</td>
+                <td>Tecnico</td>
+                <td>30%</td>
+            </tr>
+        </table>
+        <br>
+        Salario do Funcionario: <input type="text" id="salario"><br><br>
+        Cargo do Funcionario: <input type="text" id="cargo"><br><br>
+        <button onClick="programa()">Enviar</button>
+    </form>
+    <script language="JavaScript">
+        var salario, cargo, diferenca, novoSalario;
+
+
+        function programa() {
+            salario = Number(document.getElementById("salario").value);
+            cargo = Number(document.getElementById("cargo").value);
+
+            switch (cargo) {
+                case 101:
+                    diferenca = salario * 0.1;
+                    novoSalario = diferenca + salario;
+                    alert("Salario: R$" + salario + "\nNovo Salario: R$" + novoSalario + "\nDiferença: R$" + diferenca);
+                    break;
+                case 102:
+                    diferenca = salario * 0.2;
+                    novoSalario = diferenca + salario;
+                    alert("Salario: R$" + salario + "\nNovo Salario: R$" + novoSalario + "\nDiferença: R$" + diferenca);
+                    break;
+                case 103:
+                    diferenca = salario * 0.3;
+                    novoSalario = diferenca + salario;
+                    alert("Salario: R$" + salario + "\nNovo Salario: R$" + novoSalario + "\nDiferença: R$" + diferenca);
+                    break;
+                default:
+                    alert("Codigo Invalido")
+            }
+        }
+
+    </script>
 
     <hr width="100%">
 
