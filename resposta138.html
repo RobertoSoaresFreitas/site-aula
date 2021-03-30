@@ -22,60 +22,60 @@
     <hr width="100%">
 
     <script>
-        
+
         function verificarNome() {
-          var nome;
-          nome = document.getElementById('txtNome').value;
-          alert(nome)
-          if (document.getElementById('txtNome').value == "") {
-            alert("Você não digitou seu nome");
-          } else {
-            alert("campo preenchido");
-          }
+            var nome;
+            nome = document.getElementById('txtNome').value;
+            alert(nome)
+            if (document.getElementById('txtNome').value == "") {
+                alert("Você não digitou seu nome");
+            } else {
+                alert("campo preenchido");
+            }
         }
-  
+
         function verificarIdade() {
-          var idade;
-          idade = document.getElementById('txtIdade').value;
-          if (document.getElementById('txtIdade').value == "") {
-            alert("Você não digitou sua idade");
-          } else if (isNaN(parseInt(idade))) {
-            alert("não é número");
-          } else if (parseInt(idade) >= 0 && (parseInt(idade)) < 90) {
-            alert("idade aprovada");
-          } else {
-            alert("idade não aprovada");
-          }
+            var idade;
+            idade = document.getElementById('txtIdade').value;
+            if (document.getElementById('txtIdade').value == "") {
+                alert("Você não digitou sua idade");
+            } else if (isNaN(parseInt(idade))) {
+                alert("não é número");
+            } else if (parseInt(idade) >= 0 && (parseInt(idade)) < 90) {
+                alert("idade aprovada");
+            } else {
+                alert("idade não aprovada");
+            }
         }
-  
+
         function mudarTamanho() {
-          alert("Tamanho da janela do browser modificada");
+            alert("Tamanho da janela do browser modificada");
         }
         var timeId;
         timeId = setInterval(alertaInativo, 60000);
-  
+
         function alertaInativo() {
-          if (document.getElementById('txtNome').value == "") {
-            alert("campo de nome inativo");
-          }
-          if (document.getElementById('txtIdade').value == "") {
-            alert("campo de idade inativo");
-          }
+            if (document.getElementById('txtNome').value == "") {
+                alert("campo de nome inativo");
+            }
+            if (document.getElementById('txtIdade').value == "") {
+                alert("campo de idade inativo");
+            }
         }
-  
-      </script>
+
+    </script>
     </head>
-  
+
     <body onresize="mudarTamanho()">
-      <form>
-        Nome <br>
-        <input type="text" name="txtNome" id="txtNome" size="60">
-        <input type="button" name="btnNome" id="btnNome" onclick="verificarNome();" value="ok">
-        <br>
-        Idade <br>
-        <input type="text" id="txtIdade" size="10">
-        <input type="button" name="btnIdade" id="btnIdade" onclick="verificarIdade();" value="ok">
-      </form>
+        <form>
+            Nome <br>
+            <input type="text" name="txtNome" id="txtNome" size="60">
+            <input type="button" name="btnNome" id="btnNome" onclick="verificarNome();" value="ok">
+            <br>
+            Idade <br>
+            <input type="text" id="txtIdade" size="10">
+            <input type="button" name="btnIdade" id="btnIdade" onclick="verificarIdade();" value="ok">
+        </form>
     </body>
 
     <hr width="100%">
