@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 138</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+
+        <!-- Nome: Roberto Soares de Freitas
+        RA: 155.0781921028
+        Data: 30/03/2021
+        Questionário Nº 12 -->
+
+        <center>Resposta - 138</center>
+    </h1>
+    <hr width="100%">
+
+    <script>
+        
+        function verificarNome() {
+          var nome;
+          nome = document.getElementById('txtNome').value;
+          alert(nome)
+          if (document.getElementById('txtNome').value == "") {
+            alert("Você não digitou seu nome");
+          } else {
+            alert("campo preenchido");
+          }
+        }
+  
+        function verificarIdade() {
+          var idade;
+          idade = document.getElementById('txtIdade').value;
+          if (document.getElementById('txtIdade').value == "") {
+            alert("Você não digitou sua idade");
+          } else if (isNaN(parseInt(idade))) {
+            alert("não é número");
+          } else if (parseInt(idade) >= 0 && (parseInt(idade)) < 90) {
+            alert("idade aprovada");
+          } else {
+            alert("idade não aprovada");
+          }
+        }
+  
+        function mudarTamanho() {
+          alert("Tamanho da janela do browser modificada");
+        }
+        var timeId;
+        timeId = setInterval(alertaInativo, 60000);
+  
+        function alertaInativo() {
+          if (document.getElementById('txtNome').value == "") {
+            alert("campo de nome inativo");
+          }
+          if (document.getElementById('txtIdade').value == "") {
+            alert("campo de idade inativo");
+          }
+        }
+  
+      </script>
+    </head>
+  
+    <body onresize="mudarTamanho()">
+      <form>
+        Nome <br>
+        <input type="text" name="txtNome" id="txtNome" size="60">
+        <input type="button" name="btnNome" id="btnNome" onclick="verificarNome();" value="ok">
+        <br>
+        Idade <br>
+        <input type="text" id="txtIdade" size="10">
+        <input type="button" name="btnIdade" id="btnIdade" onclick="verificarIdade();" value="ok">
+      </form>
+    </body>
+
+    <hr width="100%">
+
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+
+    <hr width="100%">
+
+</body>
+
+</html>
